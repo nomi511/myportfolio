@@ -1,0 +1,450 @@
+:export {
+  light: azure;
+  dark: black;
+  grey: #424242;
+  primary: orange;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.darkbg {
+  background-color: black;
+  color: azure;
+}
+
+nav {
+  width: 90%;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  bottom: 5%;
+  z-index: 5;
+}
+
+nav .item {
+  margin-right: 5%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  padding-top: 11px;
+  text-align: center;
+  background-color: #424242;
+  cursor: pointer;
+}
+
+nav .bg-color {
+  width: 20%;
+}
+
+nav .bg-color div:hover {
+  background-color: orange;
+}
+
+nav .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+}
+
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 20%;
+}
+
+nav .links div:hover {
+  background-color: orange;
+}
+
+.menu .activebtn {
+  background-color: orange;
+  border: 1px solid orange;
+}
+
+.fa {
+  color: azure;
+}
+
+.bodysection {
+  width: 100%;
+  height: 100%;
+}
+
+.bodysection section {
+  -webkit-transform: translateX(-100%) scale(0);
+          transform: translateX(-100%) scale(0);
+}
+
+.bodysection .sec1 {
+  display: none;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+}
+
+.bodysection .sec2 {
+  display: none;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+}
+
+.bodysection .sec3 {
+  display: none;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+}
+
+.bodysection .sec4 {
+  display: none;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+}
+
+.bodysection .active {
+  display: block;
+  -webkit-animation: pageAnim 0.8s ease-in-out;
+          animation: pageAnim 0.8s ease-in-out;
+}
+
+@-webkit-keyframes pageAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes pageAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
+
+.bodysection .home .homediv {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 15%;
+  padding-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bodysection .home .homediv .greetingtxt {
+  width: 50%;
+  height: 90%;
+  margin-top: 5%;
+}
+
+.bodysection .home .homediv .greetingtxt span {
+  color: orange;
+}
+
+.bodysection .home .homediv .greetingtxt button {
+  margin-top: 5%;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  color: azure;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.bodysection .home .homediv .greetingtxt button:hover {
+  background-color: #424242;
+}
+
+.bodysection .home .homediv .greetingimg {
+  width: 50%;
+  height: 90%;
+}
+
+.bodysection .home .homediv .greetingimg img {
+  width: 30vw;
+  height: 30vh;
+}
+
+.bodysection .about {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodysection .about .aboutdiv h2 {
+  margin-top: 4rem;
+  margin-left: 45%;
+}
+
+.bodysection .about .aboutdiv span {
+  color: orange;
+}
+
+.bodysection .about .aboutdiv .aboutflex {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info h3 {
+  color: orange;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info p {
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info button {
+  margin-top: 4rem;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  color: azure;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info button:hover {
+  background-color: #424242;
+}
+
+.bodysection .about .aboutdiv .aboutflex .skills {
+  width: 40%;
+  margin-left: 5%;
+}
+
+.bodysection .about .aboutdiv .aboutflex .skills h3 {
+  color: orange;
+}
+
+.bodysection .about .aboutdiv .aboutflex .skills ul {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.bodysection .projects {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodysection .projects .projectsdiv h2 {
+  margin-top: 5rem;
+  margin-left: 45%;
+}
+
+.bodysection .projects .projectsdiv span {
+  color: orange;
+}
+
+.bodysection .projects .projectsdiv .projects-area {
+  width: 75%;
+  height: 25.5rem;
+  margin-left: 14%;
+  margin-top: 3rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bodysection .projects .projectsdiv .projects-area .bg-light {
+  background-color: #cccccc;
+}
+
+.bodysection .projects .projectsdiv .projects-area .bg-dark {
+  background-color: #313131;
+}
+
+.bodysection .projects .projectsdiv .projects-area .pr {
+  height: 15rem;
+  width: 18rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.bodysection .projects .projectsdiv .projects-area .pr .pr-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bodysection .projects .projectsdiv .projects-area img {
+  width: 16rem;
+  height: 8rem;
+}
+
+.bodysection .projects .projectsdiv .projects-area h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bodysection .projects .projectsdiv .projects-area a {
+  text-decoration: none;
+  color: orange;
+}
+
+.bodysection .contact {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodysection .contact .contactdiv h2 {
+  margin-top: 5rem;
+  margin-left: 45%;
+}
+
+.bodysection .contact .contactdiv span {
+  color: orange;
+}
+
+.bodysection .contact .contactdiv form {
+  margin-top: 2rem;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.bodysection .contact .contactdiv form button {
+  width: 30%;
+  height: 2.5rem;
+  margin-left: 35%;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 25px;
+  background-color: orange;
+  color: azure;
+  cursor: pointer;
+}
+
+.bodysection .contact .contactdiv form button:hover {
+  background-color: #424242;
+}
+
+.bodysection .contact .contactdiv form .form-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bodysection .contact .contactdiv form .form-top input {
+  width: 49.5%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  background-color: #555;
+}
+
+.bodysection .contact .contactdiv form .form-top input:focus {
+  color: azure;
+}
+
+.bodysection .contact .contactdiv form .form-mid input {
+  width: 99.8%;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  background-color: #555;
+}
+
+.bodysection .contact .contactdiv form .form-mid input:focus {
+  color: azure;
+}
+
+.bodysection .contact .contactdiv form .form-btm {
+  margin-top: 1rem;
+  width: 99.8%;
+  height: 13rem;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  background-color: #555;
+}
+
+.bodysection .contact .contactdiv form .form-btm:focus {
+  color: azure;
+}
+/*# sourceMappingURL=style.css.map */

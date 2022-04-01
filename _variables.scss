@@ -1,0 +1,11 @@
+$light: azure;
+$dark: black;
+$grey: rgb(66, 66, 66);
+$primary: orange;
+
+:export {
+  light: $light;
+  dark: $dark;
+  grey: $grey;
+  primary: $primary;
+}
