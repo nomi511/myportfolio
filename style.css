@@ -173,7 +173,7 @@ nav .links div:hover {
   }
 }
 
-.bodysection .home .homediv {
+.bodysection .homediv {
   width: 100vw;
   height: 100vh;
   padding-left: 15%;
@@ -186,17 +186,17 @@ nav .links div:hover {
           justify-content: space-between;
 }
 
-.bodysection .home .homediv .greetingtxt {
+.bodysection .homediv .greetingtxt {
   width: 50%;
   height: 90%;
   margin-top: 5%;
 }
 
-.bodysection .home .homediv .greetingtxt span {
+.bodysection .homediv .greetingtxt span {
   color: orange;
 }
 
-.bodysection .home .homediv .greetingtxt button {
+.bodysection .homediv .greetingtxt button {
   margin-top: 5%;
   width: 150px;
   height: 30px;
@@ -207,16 +207,21 @@ nav .links div:hover {
   cursor: pointer;
 }
 
-.bodysection .home .homediv .greetingtxt button:hover {
+.bodysection .homediv .greetingtxt button a {
+  text-decoration: none;
+  color: azure;
+}
+
+.bodysection .homediv .greetingtxt button:hover {
   background-color: #424242;
 }
 
-.bodysection .home .homediv .greetingimg {
+.bodysection .homediv .greetingimg {
   width: 50%;
   height: 90%;
 }
 
-.bodysection .home .homediv .greetingimg img {
+.bodysection .homediv .greetingimg img {
   width: 30vw;
   height: 30vh;
 }
@@ -265,6 +270,11 @@ nav .links div:hover {
   color: azure;
   background-color: orange;
   cursor: pointer;
+}
+
+.bodysection .about .aboutdiv .aboutflex .info button a {
+  text-decoration: none;
+  color: azure;
 }
 
 .bodysection .about .aboutdiv .aboutflex .info button:hover {

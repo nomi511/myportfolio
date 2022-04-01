@@ -37,7 +37,7 @@
                     <div class="greetingtxt">
                         <h2>Hi! I am <span>NOMAN KHAN </span></h2>
                         <h3>A MERN Stack Developer</h3>
-                        <button>Donwload CV</button>
+                        <button> <a href="mycv.pdf">Donwload CV</a></button>
                     
                     </div>
                     <div class="greetingimg">
@@ -62,7 +62,7 @@
                                 when I see my projects come to life, it just gives me the feeling that I cannot describe in words, and I am happy to use
                                 my knowledge in professional field.
                             </p>
-                            <button>Donwload CV</button>
+                            <button> <a href="mycv.pdf">Donwload CV</a></button>
                         </div>
                         <div class="skills">
 
@@ -179,16 +179,16 @@
                         Contact <span>Me</span>
                     </h2>
 
-                    <form>
+                    <form action="POST" data-netlify="true">
                         <div class="form-top">
-                            <input type="text" name="name" placeholder="name">
-                            <input type="email" name="email" placeholder="example@gmail.com">
+                            <input type="text" name="name" class="name" placeholder="name">
+                            <input type="email" name="email" class="email" placeholder="example@gmail.com">
                         </div>
                         <div class="form-mid">
-                            <input type="text" name="subject" placeholder="subject">
+                            <input type="text" name="subject" class="subject" placeholder="subject">
                         </div>
 
-                        <textarea name="message" class="form-btm" cols="30" rows="10" placeholder="message"></textarea>
+                        <textarea name="message" id="message" class="form-btm message" cols="30" rows="10" placeholder="message"></textarea>
                         
                         <button type="submit">Submit</button>
 
@@ -200,7 +200,6 @@
         </main>
 
     </div>
-    
     
 
     <script src="index.js"></script>
